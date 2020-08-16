@@ -1,0 +1,3 @@
+version: STSv1
+mode: none
+max_age: 86400
