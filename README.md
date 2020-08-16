@@ -7,7 +7,7 @@ If MTA-STS is new to you, please read Google's documentation at
 
 This repo has a separate directory for each MTA-STS mode (*testing, enforce, none*) with an mta-sts.txt file configured for the corresponding mode. By connecting your repo to a site in Netlify to host the mta-sts.txt file, you can easily change which mode you're in by modifying the *publish directory* setting in the Netlify site. Furthermore, this allows you to use one repo for one or more sites in Netflify, for each domain name added in your Google G Suite account with the same MX records.
 
-For in-depth details how MTA-STS works you can review [SMTP MTA Strict Transport Security (MTA-STS)](https://tools.ietf.org/html/rfc8461) from IETF.
+For in-depth detail how MTA-STS works you can review [SMTP MTA Strict Transport Security (MTA-STS)](https://tools.ietf.org/html/rfc8461) from IETF.
 
 ## 1. GitHub
 
