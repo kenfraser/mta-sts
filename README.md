@@ -19,7 +19,7 @@ For in-depth detail how MTA-STS works you can review [SMTP MTA Strict Transport 
 
 ## 2. Netlify
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/kenfraser/gsuite-mta-sts/generate)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/kenfraser/gsuite-mta-sts)
 
 1. Create a site:
    + Point to your new repo in GitHub
