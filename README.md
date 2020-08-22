@@ -15,13 +15,13 @@ For in-depth detail how MTA-STS works you can review [SMTP MTA Strict Transport 
 2. Now that you have your own copy, in each directory (*testing, enforce, none*), configure the mta-sts.txt file:
    + If needed, modify the MX key/value pairs so there is a match for each MX record in your DNS.
    + Edit the max_age key/value pair to your preferred time in seconds (*between 1 day and 1 year*)
+3. In the file netfliy.toml, set which directory / MTA-STS mode you want published to Netlify (*the default is set to testing*)
 
 ## 2. Netlify
 
 1. Create a site:
    + Point to your new repo in GitHub
-   + Set the publish directory to the MTA-STS mode you want to be in (*testing, enforce, none*)
-   + After the site is created and deployed, verify you can get to the mta-sts.txt file by going to https://your-site-name.netlify.app/.well-known/mta-sts.txt, and that it's showing the correct mode you entered as the publish directory.
+   + After the site is created and deployed, verify you can get to the mta-sts.txt file by going to https://your-site-name.netlify.app/.well-known/mta-sts.txt, and that it's showing the correct mode you entered as the publish directory in your netlify.toml file.
 2. Add your subdomain to the new site:
    + Domain Management > Add a Domain
    + Enter your subdomain mta-sts.yourdomain.com
