@@ -19,6 +19,8 @@ For in-depth detail how MTA-STS works you can review [SMTP MTA Strict Transport 
 
 ## 2. Netlify
 
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/kenfraser/gsuite-mta-sts)
+
 1. Create a site:
    + Point to your new repo in GitHub
    + After the site is created and deployed, verify you can get to the mta-sts.txt file by going to https://your-site-name.netlify.app/.well-known/mta-sts.txt, and that it's showing the correct mode you entered as the publish directory in your netlify.toml file.
