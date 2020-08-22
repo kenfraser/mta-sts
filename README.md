@@ -12,10 +12,10 @@ For in-depth detail how MTA-STS works you can review [SMTP MTA Strict Transport 
 ## 1. GitHub
 
 1. Click to [create your own template copy of this repo](https://github.com/kenfraser/gsuite-mta-sts/generate), or click the green button near the top right called "Use this template" to perform the same action.
-2. Now that you have your own copy, in each directory (*testing, enforce, none*), configure the mta-sts.txt file:
+2. Now that you have your own copy, in each directory ([testing](testing/.well-known/mta-sts.txt), [enforce](enforce/.well-known/mta-sts.txt), [none](none/.well-known/mta-sts.txt)), configure the mta-sts.txt file:
    + If needed, modify the MX key/value pairs so there is a match for each MX record in your DNS.
    + Edit the max_age key/value pair to your preferred time in seconds (*between 1 day and 1 year*)
-3. In the file netfliy.toml, set which directory / MTA-STS mode you want published to Netlify (*the default is set to testing*)
+3. In [netfliy.toml](netlify.toml), set which directory / MTA-STS mode you want published to Netlify (*the default is set to testing*)
 
 ## 2. Netlify
 
