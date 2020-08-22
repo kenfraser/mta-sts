@@ -1,0 +1,4 @@
+[build]
+
+  # Set the directory / MTA-STS mode to publish in Netlfiy, either enforce, none, or testing.
+  publish = "testing/"
