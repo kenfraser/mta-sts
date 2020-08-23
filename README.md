@@ -12,7 +12,7 @@ You can also use the one repo with multiple Netlify sites if you manage multiple
 2. Now that you have your own copy, in each directory ([testing](testing/.well-known/mta-sts.txt), [enforce](enforce/.well-known/mta-sts.txt), [none](none/.well-known/mta-sts.txt)), configure the mta-sts.txt file:
    - If needed, modify the `mx` key/value pairs so there is a match for each MX record in your DNS.
    - if needed, modify `max_age` to your preferred time in seconds (_between 1 day and 1 year_)
-3. In [netfliy.toml](netlify.toml), set which directory / MTA-STS mode you want published to Netlify (_the default is set to testing_)
+3. In [netfliy.toml](netlify.toml), set which directory / MTA-STS mode you want published to Netlify
 
 ### 2. Netlify
 
