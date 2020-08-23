@@ -26,7 +26,7 @@ You can also use the one repo with multiple Netlify sites if you manage multiple
 
 ### 3. DNS (_Point to Netlify_)
 
-Create a CNAME record in DNS pointing to the site created in Netlify.
+Create the subdomain `mta-sts` and point it your site in Netlify.
 
 1. Go to your DNS management console (_ex. Cloudflare, Amazon Route 53, etc._)
 2. Create a new CNAME record for `yourdomain.com`
