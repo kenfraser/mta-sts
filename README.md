@@ -2,7 +2,9 @@
 
 ## A serverless solution to host mta-sts.txt with GitHub via Netlify, and deploy your policy in DNS
 
-This repo has a folder for each MTA-STS mode ([testing](testing/.well-known/mta-sts.txt), [enforce](enforce/.well-known/mta-sts.txt), [none](none/.well-known/mta-sts.txt)) with an mta-sts.txt file configured for the corresponding mode. By setting the publish directory in a Netfliy site you can easily change which mode you are in, and you can use the one repo with multiple Netlify sites if you manage multiple domain names that have the same MX records in DNS.
+This repo has a folder for each MTA-STS mode ([testing](testing/.well-known/mta-sts.txt), [enforce](enforce/.well-known/mta-sts.txt), [none](none/.well-known/mta-sts.txt)) with an mta-sts.txt file configured for the corresponding mode. By setting the publish directory in [netfliy.toml](netlify.toml) you can easily switch which mode you are in.
+
+You can also use the one repo with multiple Netlify sites if you manage multiple domain names that have the same MX records in DNS. If that is the case you could either use the one netlify.toml file to change the mode for all domains in one go, or if you prefer to manage their modes separately, delete the netlify.toml file and configure the publish directory in the Netlify UI for each site.
 
 ### 1. GitHub
 
