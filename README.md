@@ -39,7 +39,7 @@ _Note:_ If you manage DNS with Cloudflare, disable the proxy and set to DNS only
 
 3. Go to `https://yourdomain.com/.well-known/mta-sts.txt` to verify the site is working. You may have to wait a bit for DNS to propogate.
 
-### 4. Google G Suite
+### 4. Google Workspace
 
 Create either a new mailbox, or an email alias to receive reports from other mail servers that support MTA-STS.
 
@@ -64,11 +64,11 @@ With all the above in place, it's time to deploy your policy. Head back to your 
 
 **`_mta-sts`**: Replace the timestamp _1597582738053_ with either the current timestamp or another unique value (_1–32 alphanumeric characters_). You will need to update this value every time a change to your published policy is made to tell other mail servers there is a newer policy. You can get the current time stamp by going to [Unix Time Stamp](https://www.unixtimestamp.com/) or whichever your preferred method is.
 
-### 6. G Suite (_Verify policy is valid and published_)
+### 6. Google Workspace (_Verify policy is valid and published_)
 
-In your G Suite Admin Console, go to [MTA-STS Configuration Diagnostics](https://admin.google.com/ac/apps/cs/diagnostic). If it shows "MTA-STS Configuration – Valid" you are good to go. If says "Invalid" go back and review any potential errors in your configuration.
+In your Google Workspace Admin Console, go to [MTA-STS Configuration Diagnostics](https://admin.google.com/ac/apps/cs/diagnostic). If it shows "MTA-STS Configuration – Valid" you are good to go. If says "Invalid" go back and review any potential errors in your configuration.
 
 ## Resources
 
-- Google G Suite Admin Help: [Increase email security with MTA-STS and TLS reporting](https://support.google.com/a/answer/9261504)
+- Google Workspace Admin Help: [Increase email security with MTA-STS and TLS reporting](https://support.google.com/a/answer/9261504)
 - IETF RFC 8461: [SMTP MTA Strict Transport Security (MTA-STS)](https://tools.ietf.org/html/rfc8461)
